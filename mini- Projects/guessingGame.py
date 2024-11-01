@@ -40,17 +40,17 @@ def main():
             attempts += 1
             
             
-             # Cheat code logic
-            if guess == 999:  # Reveal correct number
-                print(f"Cheat activated! The correct number is: {correct_number}")
-                continue
-            elif guess == 111:  # Add 2 extra attempts, respecting max_attempt limit
-                if max_attempt - attempts > 2:
-                    max_attempt += 2  # Increase max_attempt by 2
-                    print(f"Cheat activated! You have {max_attempt - attempts} attempts left.")
-                else:
-                    print(f"Cheat activated, but you have no extra attempts available.")
-                continue
+            #  # Cheat code logic
+            # if guess == 999:  # Reveal correct number
+            #     print(f"Cheat activated! The correct number is: {correct_number}")
+            #     continue
+            # elif guess == 111:  # Add 2 extra attempts, respecting max_attempt limit
+            #     if max_attempt - attempts > 2:
+            #         max_attempt += 2  # Increase max_attempt by 2
+            #         print(f"Cheat activated! You have {max_attempt - attempts} attempts left.")
+            #     else:
+            #         print(f"Cheat activated, but you have no extra attempts available.")
+            #     continue
             
             
             if guess == correct_number:
@@ -78,8 +78,7 @@ def main():
             break
         
         
-        if guess == correct_number:
-            points **2
+   
         
 if __name__ == "__main__":
     main()
