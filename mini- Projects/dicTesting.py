@@ -70,7 +70,7 @@ def login_user():
         username = input("username: ")
         password = input("password: ")
         
-        # for user in player_info: # i add this to get rid of the error code 
+        # for user in player_info: # I add this to get rid of the error code 
             
                 
         for player in player_info:  # Iterate through each player dictionary in the list
@@ -131,6 +131,7 @@ def signup():
         
         
         print(f"Signup complete! Welcome, {name}.")
+        return
    
  
 def secret_login():
@@ -184,8 +185,8 @@ def main():
     while True:
         
         print("[1] Login")
-        print("[2] signup")
-        print("Exit")
+        print("[2] Signup")
+        print("[3] Exit")
         
         try:
             
